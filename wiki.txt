@@ -1,0 +1,32 @@
+==============//===============
+[DEV]
+
+/**
+* IN MEMORY USERS
+*
+* username : user
+* password : 12345678
+*
+* username : admin
+* password : 12345678
+*
+*/
+
+http://localhost:5050/nra-rest/status
+
+/**
+* SWAGGER - api docs
+* BASIC AUTH REQUIRED !
+*/
+http://localhost:5050/nra-rest/swagger-ui.html#/
+
+
+
+/**
+* GET LP CONTROL ACTIVITY EXAMPLE HTTP GET
+* BASIC AUTH REQUIRED !
+*/
+http://localhost:5050/nra-rest/control-activity?pin=0000000000&type=BLS&uin=uinCode
+
+
+==============//===============
