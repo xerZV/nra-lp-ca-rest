@@ -36,9 +36,9 @@ public class LpControlActivityController {
 
     @ApiOperation(value = "View description for lp control activity", response = LpControlActivityDTO.class)
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Successfully retrieved list of VwRptLpControlActivityDTOs", response = LpControlActivityDTO.class),
+            @ApiResponse(code = 200, message = "Successfully retrieved list of LpControlActivityDTOs", response = LpControlActivityDTO.class),
             @ApiResponse(code = 401, message = "You are not authorized to view the resource"),
-            @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
+            @ApiResponse(code = 403, message = "The resource you were trying to reach is forbidden"),
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found", response = LpControlActivityNotFoundException.class),
             @ApiResponse(code = 406, message = "Not Acceptable - the response is custom json exception with messages for all rejected values and their expected values", response = NotAcceptableError.class),
             @ApiResponse(code = 500, message = "Internal server error", response = LpControlActivitySQLException.class)
@@ -53,7 +53,6 @@ public class LpControlActivityController {
     }
 
     private NotAcceptableError getErrorResponse(BindingResult bindingResult) {
-        final StringBuilder stringBuilder = new StringBuilder();
         NotAcceptableError notAcceptableError = new NotAcceptableError();
         notAcceptableError.setStatus(HttpStatus.NOT_ACCEPTABLE.value());
         List<Error> errorList = new ArrayList<>();
