@@ -8,7 +8,6 @@ import java.util.stream.Collectors;
 
 /**
  * The {@code LpControlActivityDTOFactory} class contains two helper methods which convert {@link LpControlActivity} to {@link LpControlActivityDTO} or {@link List}<{@link LpControlActivity}> to {@link List}<{@link LpControlActivityDTO}> <br/>
- * It should be used as Data Transfer Object
  *
  * @author Nikolay Simitchiyski
  */
