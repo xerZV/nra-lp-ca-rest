@@ -29,6 +29,10 @@ hs_err_pid*
 *.ipr
 /target/
 
+### maven ###
 !.mvn/wrapper/maven-wrapper.jar
 mvnw
 mvnw.cmd
+
+### ojdbc6 ###
+!lib/ojdbc6.jar.jar
