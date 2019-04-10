@@ -35,4 +35,5 @@ mvnw
 mvnw.cmd
 
 ### ojdbc6 ###
-!lib/ojdbc6.jar.jar
+!lib/ojdbc6.jar
+!/lib/ojdbc6.jar
